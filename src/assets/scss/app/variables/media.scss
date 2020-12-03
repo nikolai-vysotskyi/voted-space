@@ -1,0 +1,13 @@
+$media-expressions: (
+    /**
+     * Basic resolutions
+     */
+    // Extended media
+        'm': 'all and (min-width: 1px)',
+        't': 'all and (min-width: 600px)',
+        'd': 'all and (min-width: 1280px)',
+    // Limited media
+        'm-only': '(min-width: 1px) and (max-width: 599px)',
+        't-only': '(min-width: 600px) and (max-width: 1279px)',
+        'd-only': '(min-width: 1280px)',
+);

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    height: 34px;
+    width: 180px;
+
+    color: $white;
+    background: $gray-100;
+
+    border: none;
+    border-radius: 3px;
+
+    outline: none;
+}
