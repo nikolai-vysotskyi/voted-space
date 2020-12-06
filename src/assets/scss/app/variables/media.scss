@@ -5,6 +5,7 @@ $media-expressions: (
     // Extended media
         'm': 'all and (min-width: 1px)',
         't': 'all and (min-width: 600px)',
+        'l': 'all and (min-width: 1024px)',
         'd': 'all and (min-width: 1280px)',
     // Limited media
         'm-only': '(min-width: 1px) and (max-width: 599px)',

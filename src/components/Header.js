@@ -2,23 +2,25 @@ import React from "react";
 import Logo from "./Logo";
 
 import {
-     Link,
+    NavLink,
 } from "react-router-dom";
 
-const Header = ({}) => {
+const Header = ({history}) => {
     return (
-        <div className='header'>
+        <section className='header'>
             <div className='header_wrapper'>
                 <div>
-                    <Logo/>
+                    <NavLink className='header_link-left' to="/">
+                        <Logo/>
+                    </NavLink>
                 </div>
                 <div>
-                    <Link to="/">Главная</Link>
-                    <Link to="/votes">Голосования</Link>
-                    <button >Провести голосование</button>
+                    <NavLink className='header_link-right' to="/">Главная</NavLink>
+                    <NavLink className='header_link-right' to="/votes">Голосования</NavLink>
+                    <button className='header_link-right'>Провести голосование</button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

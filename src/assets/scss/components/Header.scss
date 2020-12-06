@@ -14,9 +14,40 @@
         display:     flex;
         align-items: center;
 
+        @include media('m-only') {
+            a.header_link-left{
+                width: 50vw;
+                height: 60px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            a.header_link-right {
+                display: none;
+            }
+            button {
+                width: 50vw;
+                height: 60px;
+            }
+        }
+        @include media('t') {
+            width:           100%;
+            justify-content: space-between;
+
+            margin:      0 40px;
+        }
+        @include media('d') {
+            width:           1280px;
+            justify-content: space-between;
+        }
+    }
+
+    .header_link-right {
+        font-size:   12px;
 
         @include media('t') {
-            width: 1280px;
+            margin-left: 2.375rem;
         }
     }
 }
