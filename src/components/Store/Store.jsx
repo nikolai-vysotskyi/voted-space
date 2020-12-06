@@ -8,7 +8,7 @@ import {
 import { Provider as StoreProvider } from 'react-redux';
 import thunk from 'redux-thunk';
 import structure from './structure.js';
-git
+
 let _store;
 const _create = (reducersArray = [], middleware) => {
 	const appliedMiddleware = applyMiddleware(thunk, typeof middleware === 'function' ?
