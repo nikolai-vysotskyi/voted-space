@@ -3,7 +3,6 @@ import {
 	createStore,
 	applyMiddleware,
 	combineReducers,
-	// bindActionCreators
 } from 'redux';
 import { Provider as StoreProvider } from 'react-redux';
 import thunk from 'redux-thunk';
@@ -19,17 +18,20 @@ const _create = (reducersArray = [], middleware) => {
 const _combineReducers = (reducersArray = []) => {
 	let i = 0,
 		reducers = {};
-	
+
 	while (i < reducersArray.length) {
 		reducers[reducersArray[i].name] = reducersArray[i];
 		i++;
 	}
 	return combineReducers(reducers);
 };
-export default () => _store;
+
+// Assign the arrow function to a variable before exporting it
+const getStore = () => _store;
+export default getStore;
 
 export const Provider = ({ children }) => {
 	return <StoreProvider store={(_store = _create(structure))}>
 		{children}
-	</StoreProvider>
+	</StoreProvider>;
 };

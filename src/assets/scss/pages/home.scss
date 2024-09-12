@@ -11,3 +11,14 @@
     background-position: center;
     background-color: $purple;
 }
+
+.nothing {
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 18px;
+}

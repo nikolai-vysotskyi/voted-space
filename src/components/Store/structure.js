@@ -1,5 +1,6 @@
 import slider from './slider';
 
-export default [
-	slider,
-];
+// Assign array to a variable before exporting
+const sliderArray = [slider];
+
+export default sliderArray;

@@ -3,10 +3,6 @@ import {useSelector} from 'react-redux';
 import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 
-import {
-    NavLink,
-} from "react-router-dom";
-
 let Slider = () => {
         const Slider = useSelector((state) => state.slider);
         // let currentSlide = Slider.currentSlide;

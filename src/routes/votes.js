@@ -1,15 +1,13 @@
 import React from "react";
-import Logo from "./Logo";
+import Nothing from "../components/Nothing";
 
-const Header = ({}) => {
+const Votes = () => {
     return (
-        <div>
-            <Logo />
-            <div>
-
-            </div>
-        </div>
+        <>
+            <div className='home_bg'/>
+            <Nothing />
+        </>
     );
 };
 
-export default Header;
+export default Votes;

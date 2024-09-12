@@ -5,7 +5,7 @@ import {
     NavLink,
 } from "react-router-dom";
 
-const Header = ({history}) => {
+const Header = () => {
     return (
         <section className='header'>
             <div className='header_wrapper'>
